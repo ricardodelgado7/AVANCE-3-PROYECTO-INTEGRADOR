@@ -1,0 +1,743 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/portada.jpg) ; 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+   
+}
+
+
+
+header nav{
+    text-align: center;
+    padding:30px 50px 0 0;
+    
+}
+
+header nav a{
+    margin: 5px;
+}
+
+header .textos-header{
+    margin-top:60px;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 49.5px;
+    color:rgb(17, 17, 16);
+    font-weight: bolder;
+}
+
+.titulo {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bolder;
+}
+
+
+ #titulo2{
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#textoreforestacion{
+ font-size: 18px;
+ color: black;
+  font-weight: bolder;
+}
+
+
+
+/* Acerca de nosotros */
+
+.fondocontenedor{
+    background: linear-gradient(to right,rgb(118, 231, 43), white);
+   /* background:linear-gradient(30deg, crimson,sienna, royalblue, rgb(238, 161, 18), rgb(150, 2, 150)); */
+}
+main .contenedor .sobre-nosotros{
+    padding: 30px 0 60px 0;
+    
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.imagen-about-us{
+    width: 48%;
+
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+    
+    
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+/* Galeria */
+
+
+.fondoportafolio{
+    background-image: url("../img/portafolio.jpg");
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #4d0686;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+/*  Our team */
+
+
+
+.about-services{
+    background-image: radial-gradient(circle at 55.02% -7.36%,
+    #bfffff 0, #8dffff 25%, #38dcff 50%, #00b8e7 75%, #009bd6 100%);
+
+    padding-bottom: 30px;
+}
+
+
+.about-services .titulo{
+    color: black;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenedor .servicio-ind p{
+    font-weight: bolder;
+    color: black;
+}
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    background: -webkit-radial-gradient(#0f0, #06f);
+    background: -moz-radial-gradient(#0f0, #06f);
+    border-top: 2px solid rgb(243, 19, 19);
+    padding: 30px  20px ;
+    overflow: hidden;
+
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgb(189, 15, 15);
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color:black;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.content-foo p{
+    color:black;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: red;
+    background-color: white;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+/* Login  */
+
+#bodylogin{
+    background-image: url("../img/fondologin.jpg");
+    background-repeat: no-repeat center top;
+    padding: 0;
+    background-size: cover;
+    
+}
+
+
+#bodycontacto{
+    background-image: radial-gradient(circle at 0% 0%, #ff5dff 0, #db54ff 25%, #9646f9 50%, #4e37d2 75%, #002baf 100%);
+    background-repeat: no-repeat center top;
+    background-size: cover;
+    
+}
+
+.bodycomentarios{
+    background-image: radial-gradient(circle at 0% 0%, #dd6dff 0, #bc5aff 25%, #9646f9 50%, #6a33ec 75%, #2e26e1 100%);
+    background-repeat: no-repeat center top;
+    padding: 0;
+    background-size: cover;
+    
+}
+
+
+  
+  *
+  {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      
+  }
+  
+  .cajafuera
+  {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      overflow: hidden; 
+  }
+
+ 
+  
+  .formulariocaja
+  {
+    background-color: rgba(0, 0, 0, .5);
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    padding: 1em;
+    border-radius: 5px;
+    color:white;
+    border:2px solid white;
+}
+  
+  
+.formulariocaja2{
+      background-color: red;
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    padding: 1em;
+      border-radius: 5px;
+      color:white;
+      border:2px solid white;
+}
+
+
+.cajafuera3{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    overflow: hidden; 
+}
+
+.formulariocaja3{
+    background-color: rgba(0, 0, 0, .5);
+    width: 700px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    padding: 1em;
+    border-radius: 5px;
+    color:white;
+    border:2px solid white;
+}
+.formtitulo3{
+      font-size:2em;
+      font-weight: bold;
+      padding-bottom:0.8em;
+}
+  
+.formsubtitulo3{
+      font-size:1.5em;
+      font-weight: bold;
+      padding-bottom:0.5em;
+}
+
+.cajaentradatexto3{
+    width: 80%;
+    padding: 14px 10px;
+    font-size:1em;
+    border-radius:2px;
+    border:1px solid white;
+    background:transparent;
+    color:white;
+    font-weight: bold;
+}
+
+#comentario{
+    background-color: #260c6e;
+    color:white;
+    font-weight: bolder ;
+}
+
+
+#formulario3 .botonenviar3
+{
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+      border:1px solid black;
+      font-size:18px;
+      color:white;
+      background-color: #1C62C1;
+      text-align:center;
+      margin:5%;
+      font-weight: bolder;
+  }
+  
+
+
+
+.bodydonaciones{
+    background-image: linear-gradient(180deg, #d5bd36 0, #c3bd2f 8.33%,
+     #b1bc29 16.67%, #9cbb25 25%, #85b924 33.33%, #6bb725 41.67%,
+     #4bb329 50%, #0faf2f 58.33%, #00ab38 66.67%, #00a842 75%,
+     #00a44e 83.33%, #00a15a 91.67%, #009d68 100%);
+}
+  
+.cajafuera4{
+    width: 100%;
+    height: 700px;
+    display: grid;
+    overflow: hidden; 
+}
+
+
+.formulariocaja4{
+    background-color: rgba(0, 0, 0, .5);
+    width: 700px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    padding: 1em;
+    border-radius: 5px;
+    color:white;
+    border:2px solid white;
+}
+
+
+.formtitulo4{
+    font-size:2em;
+    font-weight: bold;
+    padding-bottom:0.8em;
+}
+
+.formsubtitulo4{
+    font-size:1.5em;
+    font-weight: bold;
+    padding-bottom:0.5em;
+}
+
+.cajaentradatexto4{
+  width: 80%;
+  padding: 14px 10px;
+  font-size:1em;
+  border-radius:2px;
+  border:1px solid white;
+  background:transparent;
+  color:white;
+  font-weight: bold;
+}
+
+
+
+#formulario4 .botonenviar4
+{
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+      border:1px solid black;
+      font-size:18px;
+      color:white;
+      background-color: #1C62C1;
+      text-align:center;
+      margin:5%;
+      font-weight: bolder;
+  }
+  
+
+
+  
+  input 
+  {
+      display: block;
+      text-align: left;
+      box-sizing: border-box;
+  }
+  
+  ::placeholder { 
+    color: white;
+    opacity: 1; 
+  }
+  
+  .cajaentradatexto{
+      width: 80%;
+      padding: 14px 10px;
+      font-size:1em;
+      border-radius:2px;
+      border:1px solid white;
+      background:transparent;
+      color:white;
+      font-weight: bold;
+  }
+  
+  .formtitulo
+  {
+      font-size:2em;
+      font-weight: bold;
+      padding-bottom:0.8em;
+  }
+  .formsubtitulo
+  {
+      font-size:1.5em;
+      font-weight: bold;
+      padding-bottom:0.5em;
+  }
+  
+  .ref{
+    color: yellow;
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  
+  .referencia{
+      
+      font-size: 17px;
+  }
+  .referencia a:hover
+  {
+    font-weight: bolder;
+    cursor:pointer;
+    display:block;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+   
+    
+  }
+  
+  .botonenviar
+  {
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+      border:1px solid black;
+      font-size:18px;
+      color:white;
+      background-color: #1C62C1;
+      text-align:center;
+      margin:5%;
+      font-weight: bolder;
+
+  }
+  
+  
+  .botonregistrar
+  {
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+      border:1px solid black;
+      font-size:18px;
+      color: white;
+      background-color: blue;
+      text-align:center;
+      margin:5%;
+    font-weight: bolder;
+  }
+  
+  img
+  {
+      width: 120px;
+  }
+  
+
+#h1contacto{
+      font-weight: bolder;
+  }
+
+#links a{
+    color: white;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+#links a:hover{
+    color: black;
+    display:flexbox;
+    background-color: greenyellow;
+    text-decoration:double;
+    text-align: center;
+}
+
+
+.hipervinculo{
+    color: white;
+    font-weight: bolder;
+}
+
+
+#contacto{
+    font-size: 20px;
+}
+
+#contacto2{
+    width: auto;
+    height: auto;
+}
+
+
+
+
+#space {
+    border-collapse: separate;
+    border-spacing: 30px ;
+}
+
+ 
+
+#boton{
+    
+    
+    padding: 20px; /*espacio alrededor texto*/
+    background-color:rgb(255, 60, 0); /*color botón*/
+    color: white; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    font-weight: bolder;
+    font-size:16px;
+    
+  
+}
+
